@@ -1,0 +1,25 @@
+{
+  "name": "gta-3d-world",
+  "version": "1.0.0",
+  "description": "Interactive 3D sandbox inspired by open-world city games.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "threejs",
+    "game",
+    "3d"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.181.1"
+  },
+  "devDependencies": {
+    "vite": "^7.2.2",
+    "vite-plugin-singlefile": "^2.1.0"
+  }
+}

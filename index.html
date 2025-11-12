@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTA 3D World</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="overlay" class="overlay">
+      <div class="overlay__panel">
+        <h1>Neo Block City</h1>
+        <p>
+          Welcome to our miniature open-world sandbox. Click the button below to
+          capture the mouse and explore. Use <strong>WASD</strong> to move,
+          <strong>Space</strong> to jump, and <strong>Shift</strong> to sprint.
+        </p>
+        <button id="startButton" class="overlay__button">Enter City</button>
+        <p class="overlay__hint">Tip: complete the mini-missions that appear on the HUD.</p>
+      </div>
+    </div>
+    <div id="hud" class="hud">
+      <div class="hud__missions">
+        <h2>Mission Board</h2>
+        <ol id="missionList"></ol>
+      </div>
+      <div class="hud__status">
+        <div>Energy: <span id="energyLevel">100%</span></div>
+        <div>Collected Data Shards: <span id="shardCount">0</span></div>
+        <div class="hud__weather">Weather: <span id="weatherStatus">Calm Skies</span></div>
+        <div class="hud__radio">Now Playing: <span id="radioTrack">Silver Pulse - Skyline Run</span></div>
+        <div class="hud__wanted">
+          Wanted Level:
+          <span id="wantedLevel" class="hud__wanted-stars" aria-live="polite">☆ ☆ ☆ ☆ ☆</span>
+        </div>
+      </div>
+      <canvas
+        id="minimap"
+        class="hud__minimap"
+        width="200"
+        height="200"
+        aria-label="City minimap"
+      ></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
